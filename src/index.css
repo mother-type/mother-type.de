@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("assets/fonts/PPNeueMontreal-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("assets/fonts/PPNeueMontreal-Bold.woff") format("woff");
+	font-weight: 700;
+}
+
+:root {
+	--background-color: #ffffff;
+	--text-color: #000000;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	background-color: var(--background-color);
+	border-color: var(--text-color);
+	color: var(--text-color);
+	width: 95%;
+	margin: auto;
+	font-family: 'Neue Montreal', sans-serif;
+	font-display: swap;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.logo {
+	font-size: xxx-large;
+}
+
+.item {
+	border-bottom: 1px solid var(--text-color);
+}
