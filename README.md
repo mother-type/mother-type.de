@@ -11,4 +11,4 @@ The Mother Team
 
 
 website: `mother-type.de`
-email: `itsmothertype@gmail.com`
+email: `info@mother-type.de`
