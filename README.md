@@ -1,8 +1,14 @@
-# React + Vite
+# Mother
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the our ethereal realm, where typography transcends mere letters and emerges as a canvas. This Readme is your guide to navigating our site, a sanctuary for the avant-garde.
 
-Currently, two official plugins are available:
+## About Mother Type
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mother Type is not just a foundry; it's an artistic manifesto, a tapestry of letters and symbols woven into expressions of the soul. Our passion lies in crafting typefaces that breathe life into design projects, each character a stroke of brilliance and rebellion.
+
+
+The Mother Team
+
+
+website: `mother-type.de`
+email: `itsmothertype@gmail.com`
