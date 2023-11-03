@@ -9,6 +9,16 @@
 	font-weight: 700;
 }
 
+@font-face {
+	font-family: 'Coaster Sans';
+	src: url("assets/downloadable-fonts/CoasterSans-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Body Sans';
+	src: url("assets/downloadable-fonts/BodySans-Regular.woff") format("woff");
+}
+
 :root {
 	--background-color: #ffffff;
 	--text-color: #000000;
@@ -36,12 +46,104 @@ body {
 a {
 	text-decoration: none;
 	color: var(--text-color);
+	border-bottom: 1px dashed var(--text-color); /* Add a dashed underline on links */
 }
 
 .logo {
 	font-size: xxx-large;
 }
 
+.flex {
+	display: flex;
+}
+
 .item {
 	border-bottom: 1px solid var(--text-color);
 }
+
+.editableContentWrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.editableRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.editableContent {
+	display: block;
+	font-size: 100px;
+	outline: 0;
+	max-width: 100vw;
+	padding: 20px;
+	background-color: white; /* Set the default background color to white */
+	transition: background-color 0.3s; /* Add a smooth transition effect */
+  }
+  
+  .editableContent:focus,
+  .editableContent:hover {
+	background-color: lightgray; /* Change the background color when focused */
+  }
+  
+  /* Add this CSS to your stylesheet */
+.refresh-button {
+	background-color: black; /* Background color for the button */
+	color: #fff; /* Text color */
+	border: none;
+	margin: 10px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .refresh-button:hover {
+	background-color: #0056b3; /* Background color on hover */
+  }
+  
+
+  /* Slider Styles */
+input[type="range"] {
+	-webkit-appearance: none;
+	width: 100%;
+	background: linear-gradient(to right, #000, #fff); /* Black and white gradient background */
+	border: 1px solid gray;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  input[type="range"]:hover {
+	opacity: 1;
+  }
+  
+  /* Track Styles */
+  input[type="range"]::-webkit-slider-runnable-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent; /* Make the track transparent */
+	border: 1px solid #fff; /* White border */
+	border-radius: 5px;
+  }
+  
+  /* Thumb Styles */
+  input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background: #000; /* Black thumb */
+	border: 2px solid #fff; /* White border */
+	border-radius: 50%;
+	margin-top: -5px; /* Center the thumb vertically */
+  }
+  
