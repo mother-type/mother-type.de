@@ -75,6 +75,7 @@ a {
 }
 
 .editableContent {
+	line-height: 1.0;
 	display: block;
 	font-size: 100px;
 	outline: 0;

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import sampleTexts from './sampleTexts';
 
 function EditableContent(props) {
-  const [fontSize, setFontSize] = useState(75);
+  const [fontSize, setFontSize] = useState(200);
   const [content, setContent] = useState(props.fontFamily);
 
   const getRandomSampleText = () => {
@@ -24,7 +24,7 @@ function EditableContent(props) {
             <input
               type="range"
               min="16"
-              max="150"
+              max="300"
               value={fontSize}
               onChange={(e) => setFontSize(e.target.value)}
             />
