@@ -10,6 +10,7 @@ function App() {
             <div key={id}>
             <EditableContent 
               title={data[id].title} 
+              text={data[id].text}
               fontFamily={data[id].fontFamily}
             />
             <a

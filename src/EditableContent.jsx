@@ -3,8 +3,8 @@ import { useState } from 'react';
 import sampleTexts from './sampleTexts';
 
 function EditableContent(props) {
-  const [fontSize, setFontSize] = useState(200);
-  const [content, setContent] = useState(props.fontFamily);
+  const [fontSize, setFontSize] = useState(100);
+  const [content, setContent] = useState(props.text);
 
   const getRandomSampleText = () => {
     const randomIndex = Math.floor(Math.random() * sampleTexts.length);
