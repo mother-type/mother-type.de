@@ -46,11 +46,14 @@ body {
 	line-height: 1.5;
 }
 
-a {
+a,u {
 	text-decoration: none;
-	color: var(--text-color);
-	border-bottom: 1px dashed var(--text-color); /* Add a dashed underline on links */
+	color: inherit;
+	border-bottom: 1px dashed; /* Add a dashed underline on links */
+	border-color: inherit; /* Add a dashed underline on links */
 }
+
+
 
 .logo {
 	font-size: xxx-large;
@@ -77,25 +80,36 @@ a {
 	border-top-right-radius: 510px;
 	border-bottom-right-radius: 20px;
 	border-top-left-radius: 20px;
-	font-size: 100px;
+	font-size: 50px;
 }
 
 .flex {
 	display: flex;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
 
-.item {
-	border-bottom: 1px solid var(--text-color);
+.item + .item {
+	margin: 3rem 0;
+	border-top: 1px dotted var(--text-color);
 }
+
 
 .products {
 	width: 95%;
 	margin: auto;
 }
 
-footer {
+.blog {
 	width: 95%;
 	margin: auto;
+}
+
+footer {
+	padding: 1rem;
+	background-color: var(--text-color);
+	color: var(--background-color);
+	border-color: var(--background-color);
 }
 
 .editableContentWrapper {
@@ -142,10 +156,13 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all .4s
   }
   
   .refresh-button:hover {
-	background-color: #0056b3; /* Background color on hover */
+	background-color: red; /* Background color on hover */
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
   }
   
 
@@ -186,4 +203,17 @@ input[type="range"] {
 	border-radius: 50%;
 	margin-top: -5px; /* Center the thumb vertically */
   }
-  
+  table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #f2f2f2;
+}

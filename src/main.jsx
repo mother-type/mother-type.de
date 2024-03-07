@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "work/:id",
+    path: "fonts/:id",
     element: <Post />,
   },
   { path: "*", 

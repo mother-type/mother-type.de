@@ -19,7 +19,6 @@ function EditableContent(props) {
   return (
     <div className='editableContentWrapper'>
       <div className='editableRow'>
-        <h2>{props.title}</h2>
         <div className='flex'>
             <input
               type="range"
@@ -29,7 +28,10 @@ function EditableContent(props) {
               onChange={(e) => setFontSize(e.target.value)}
             />
             <button onClick={handleRefreshClick} className="refresh-button">&#8635;</button>
+
           </div>
+          {props.showDownload && <a className="refresh-button" href={`/fonts/${props.link}`}>Download ➬</a>}
+
         </div>
       <div
         className='editableContent'
