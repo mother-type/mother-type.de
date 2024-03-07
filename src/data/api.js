@@ -4,7 +4,7 @@ const data = {
 		title: "Coaster Sans",
 		fontFamily: "Coaster Sans",
 		year: '2023',
-		text: "grooving below hemisphere",
+		text: "dangerous river of greed.",
 		description: "A new chunky display font that will make you feel like you're riding the waves back home.",
 		content: "There's still some proofing on this font being done, so if you like it, give me a buzz at <a href='mailto:itsprinterscanner@gmail.com'>itsprinterscanner@gmail.com</a> and I'll let you know when v1.1 is out.",
 		downloadLink: 'https://printerscanner.net/CoasterSans.zip'

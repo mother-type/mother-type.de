@@ -4,7 +4,7 @@ import EditableContent from './EditableContent'
 function App() {
   let productIds = Object.keys(data);
   return (
-      <div>
+      <div className='products'>
         {productIds.map((id) => (
 
             <div key={id}>
