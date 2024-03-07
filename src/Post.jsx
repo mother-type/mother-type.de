@@ -23,7 +23,7 @@ function Post() {
 						showDownload={false}
 						/>
 					<div className='flex'>
-						<a className={product.downloadLink ? 'refresh-button' : 'hidden'} href={product.downloadLink} ><u>Download Specimen ➬</u></a>
+						<a className={product.downloadLink ? 'refresh-button' : 'hidden'} href={product.downloadLink} download><u>Download Specimen ➬</u></a>
 						<a className={product.sourceFiles ? 'refresh-button' : 'hidden'} href={product.sourceFiles} ><u>Source Files</u></a>
 					</div>
 				

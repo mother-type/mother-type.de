@@ -1,4 +1,3 @@
-// This is your test secret API key.
 import stripe from 'stripe';
 import express from 'express';
 import cors from 'cors';
