@@ -74,15 +74,6 @@ a,u {
 	transition: all .4s;	
 }
 
-.logoContainer:hover {
-	background-color: red;
-	border-bottom-left-radius: 510px;
-	border-top-right-radius: 510px;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
-	font-size: 50px;
-}
-
 .flex {
 	display: flex;
 	margin-bottom: 2rem;
