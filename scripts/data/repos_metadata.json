@@ -2,23 +2,28 @@
   {
     "name": "CoasterSans",
     "metadata": {
-      "unified font repository version": "0.3",
-      "unified font repository url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
-      "typeface family": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "typeface_family": {
         "name": "Coaster Sans",
         "tags": [
           "sans-serif",
           "incomplete"
         ],
-        "repository url": "https://github.com/mother-type/CoasterSans",
-        "project url": "https://mother-type.de/fonts/coaster-sans",
+        "repository_url": "https://github.com/mother-type/CoasterSans",
+        "project_url": "https://mother-type.de/fonts/coaster-sans",
         "tools": [
           "Glyphs"
         ],
-        "designed by": [
-          "printer_scanner"
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
         ],
-        "writing systems": [
+        "writing_systems": [
           "Latin"
         ],
         "published": [
@@ -27,7 +32,7 @@
         "license": [
           "SIL Open Font License, Version 1.1"
         ],
-        "sample text": [
+        "sample_text": [
           {
             "en_us": "The quick brown fox jumps over the lazy dog"
           }
@@ -38,23 +43,28 @@
   {
     "name": "SeaweedSans",
     "metadata": {
-      "unified font repository version": "0.3",
-      "unified font repository url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
-      "typeface family": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "typeface_family": {
         "name": "Seaweed Sans",
         "tags": [
           "pixel",
           "monospace"
         ],
-        "repository url": "https://github.com/mother-type/SeaweedSans",
-        "project url": "https://mother-type.de/fonts/seaweed-sans",
+        "repository_url": "https://github.com/mother-type/SeaweedSans",
+        "project_url": "https://mother-type.de/fonts/seaweed-sans",
         "tools": [
           "Glyphs"
         ],
-        "designed by": [
-          "printer_scanner"
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
         ],
-        "writing systems": [
+        "writing_systems": [
           "Latin"
         ],
         "published": [
@@ -63,7 +73,7 @@
         "license": [
           "SIL Open Font License, Version 1.1"
         ],
-        "sample text": [
+        "sample_text": [
           {
             "en_us": "The quick brown fox jumps over the lazy dog"
           }
@@ -74,22 +84,27 @@
   {
     "name": "BodySans",
     "metadata": {
-      "unified font repository version": "0.3",
-      "unified font repository url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
-      "typeface family": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "typeface_family": {
         "name": "(my) body sans",
         "tags": [
           "decorative"
         ],
-        "repository url": "https://github.com/mother-type/BodySans",
-        "project url": "https://mother-type.de/fonts/body-sans",
+        "repository_url": "https://github.com/mother-type/BodySans",
+        "project_url": "https://mother-type.de/fonts/body-sans",
         "tools": [
           "Glyphs"
         ],
-        "designed by": [
-          "printer_scanner"
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
         ],
-        "writing systems": [
+        "writing_systems": [
           "Latin"
         ],
         "published": [
@@ -98,7 +113,7 @@
         "license": [
           "SIL Open Font License, Version 1.1"
         ],
-        "sample text": [
+        "sample_text": [
           {
             "en_us": "The quick brown fox jumps over the lazy dog"
           }

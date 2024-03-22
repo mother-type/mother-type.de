@@ -27,10 +27,10 @@ function App() {
           <h2>{data[id].name}</h2>
           {/* Load sample text */}
           <EditableContent 
-            title={data[id].metadata["typeface family"]["name"]} 
-            text={data[id].metadata["typeface family"]["sample text"][0]["en_us"]}
+            title={data[id].metadata.typeface_family.name} 
+            text={data[id].metadata.typeface_family.sample_text[0]["en_us"]}
             fontFamily={data[id].name}
-            link={id}
+            link={data[id].metadata.typeface_family.name.toLowerCase().replace(/\s+/g, '-')}
             showDownload={true}
           />
         </div>
