@@ -40,6 +40,7 @@ function FontDetail() {
     return str.replace(/[-_](\w)/g, (_, c) => c.toUpperCase()).replace(/^\w/, c => c.toUpperCase());
   }
 
+
   const matchingProduct = data.find(product => product.name.toLowerCase() === toCamelCase(id).toLowerCase());
 
   if (!matchingProduct) {
@@ -54,8 +55,6 @@ function FontDetail() {
 }
 
 function Font({ data }) {
-	console.log(data.metadata.typeface_family.designer);
-
 	return (
 		<div className="blog">
 			<a href="/" className="home-button">
@@ -69,7 +68,7 @@ function Font({ data }) {
 				link={data.metadata.typeface_family.name?.toLowerCase().replace(/\s+/g, "-") || "#"}
 				showDownload={false}
 			/>
-			<hp>{data.metadata.typeface_family.description}</hp>
+			<p>{data.metadata.typeface_family.description}</p>
 			<div className="flex">
 				<a className="refresh-button" href={`https://github.com/mother-type/${data.name}/raw/main/fonts/${data.name}.zip`} download>
 					<u>Download Specimen ➬</u>
