@@ -6,6 +6,7 @@
       "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
       "typeface_family": {
         "name": "Coaster Sans",
+        "description": "A new chunky display font that will make you feel like you're riding the waves back home.",
         "tags": [
           "sans-serif",
           "incomplete"
@@ -34,7 +35,7 @@
         ],
         "sample_text": [
           {
-            "en_us": "The quick brown fox jumps over the lazy dog"
+            "en_us": "dangerous river of greed."
           }
         ]
       }
@@ -47,6 +48,7 @@
       "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
       "typeface_family": {
         "name": "Seaweed Sans",
+        "description": "Click clack on your typewriter underwater at the crab cafe with Seaweed.",
         "tags": [
           "pixel",
           "monospace"
@@ -75,7 +77,7 @@
         ],
         "sample_text": [
           {
-            "en_us": "The quick brown fox jumps over the lazy dog"
+            "en_us": "the flow of roads"
           }
         ]
       }
@@ -88,6 +90,7 @@
       "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
       "typeface_family": {
         "name": "(my) body sans",
+        "description": "You've seen kitsch body fonts, but you haven't seen one that's literally my body. Great for resumes and businesses. If you are a corporation, please reach out directly regarding a business license.",
         "tags": [
           "decorative"
         ],
@@ -115,7 +118,7 @@
         ],
         "sample_text": [
           {
-            "en_us": "The quick brown fox jumps over the lazy dog"
+            "en_us": "The Devilish Depths Within"
           }
         ]
       }

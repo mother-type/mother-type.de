@@ -69,7 +69,7 @@ function Font({ data }) {
 				link={data.metadata.typeface_family.name?.toLowerCase().replace(/\s+/g, "-") || "#"}
 				showDownload={false}
 			/>
-			{/* TODO Add Description */}
+			<hp>{data.metadata.typeface_family.description}</hp>
 			<div className="flex">
 				<a className="refresh-button" href={`https://github.com/mother-type/${data.name}/raw/main/fonts/${data.name}.zip`} download>
 					<u>Download Specimen ➬</u>
@@ -95,6 +95,18 @@ function Font({ data }) {
 								"N/A"
 							)}
 						</td>
+					</tr>					
+					<tr>
+						<td>Built With</td>
+						<td>{data.metadata.typeface_family.tags ? data.metadata.typeface_family.tags.join(', ') : "N/A"}</td>
+					</tr>
+					<tr>
+						<td>Similar Fonts</td>
+						<td>{data.metadata.typeface_family.similar_fonts ? data.metadata.typeface_family.similar_fonts.join(', ') : "N/A"}</td>
+					</tr>
+					<tr>
+						<td>Built With</td>
+						<td>{data.metadata.typeface_family.tools || "N/A"}</td>
 					</tr>
 					<tr>
 						<td>Writing systems</td>
