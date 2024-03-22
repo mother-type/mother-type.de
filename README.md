@@ -11,6 +11,11 @@ Mother Type is not just a foundry; it's an artistic manifesto, a tapestry of let
 All font data is pulled in from the `METADATA.yml` file in their respective repositories. To fetch data call `yarn fetch-data`
 
 
+## Usage
+
+To install run `yarn && yarn dev`
+
+
 The Mother Team
 
 
