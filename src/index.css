@@ -66,7 +66,9 @@ a,u {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
+	margin: 0px 8px;
 	margin-bottom: 2rem;
+	border: 1px solid black;
 }
 
 .editableRow {
@@ -100,22 +102,29 @@ a,u {
   
   /* Add this CSS to your stylesheet */
 .refresh-button {
-	background-color: var(--text-color); /* Background color for the button */
-	color: var(--background-color); /* Text color */
-	border: none;
-	margin: 10px;
+	background-color: #9DBEFF;
+	color: black;
+	border: 1px solid;
+	border-top: none;
+	border-right: none;
 	padding: 10px 15px;
 	cursor: pointer;
 	font-size: 16px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all .4s
+	transition: all .2s;
+	position: absolute;
+	right: 0;
+	top: 0;
   }
   
-  .refresh-button:hover {
-	background-color: red; /* Background color on hover */
+  .refresh-button:hover ~ .editableContentWrapper {
 	border-top-right-radius: 15px;
+  }
+
+  .refresh-button:hover {
+	background-color: #c9dbff; /* Background color for the button */
 	border-bottom-left-radius: 15px;
   }
   

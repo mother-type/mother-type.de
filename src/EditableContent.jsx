@@ -43,7 +43,7 @@ function EditableContent(props) {
   };
 
   return (
-    <div className='editableContentWrapper grid-item'>
+    <div className='editableContentWrapper'>
       <div className='editableRow flex'>
         <h2 className='editable-title'>{props.title}</h2>
         <SliderContainer title="Size" value={fontSize} onChange={setFontSize} step={50} />
@@ -58,7 +58,7 @@ function EditableContent(props) {
             <div className="color-option" style={{ backgroundColor: '#D9D9D9' }} onClick={() => handleColorChange('#D9D9D9')}></div>
           </div>
         </div>
-        <button onClick={handleRefreshClick} className="refresh-button">&#8635;</button>
+        <button onClick={handleRefreshClick}>&#8635;</button>
         {props.showDownload && <a className="refresh-button" href={`/fonts/${props.link}`}>Download ➬</a>}
       </div>
       <style>
