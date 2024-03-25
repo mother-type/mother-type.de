@@ -7,7 +7,7 @@ import {
 import App from './App.jsx'
 import Footer from './Footer.jsx'
 import Header from './Header.jsx'
-import Post from './Post.jsx'
+import FontDetail from './FontDetail.jsx'
 import './index.css'
 import FourOhFour from './404.jsx';
 import CheckoutForm from './CheckoutForm.jsx';
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "fonts/:id",
-    element: <Post />,
+    element: <FontDetail />,
   },
   { path: "*", 
     element: <FourOhFour />,  

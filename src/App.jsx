@@ -1,33 +1,41 @@
-import data from './data/api.js'
-import EditableContent from './EditableContent'
+import { useState, useEffect } from 'react';
+import EditableContent from './EditableContent.jsx'
 
 function App() {
-  let productIds = Object.keys(data);
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    fetch(import.meta.env.BASE_URL + 'scripts/data/repos_metadata.json') 
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        return response.json();
+      })
+      .then(jsonData => {
+        setData(jsonData);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
-      <div className='products'>
-        {productIds.map((id) => (
-
-            <div className='item' key={id}>
-            <EditableContent 
-              title={data[id].title} 
-              text={data[id].text}
-              fontFamily={data[id].fontFamily}
-              link={id}
-              showDownload={true}
-            />
-            <a
-            href={data[id].link ? `${data[id].link}` : `fonts/${id}`}
-
-            >
-              {data[id].thumbnail && !data[id].mov && <img loading="lazy" src={data[id].thumbnail} alt={data[id].title} />}
-              {data[id].mov && <video loading="lazy" autoPlay={true} muted={true}><source autoPlay src={data[id].mov} type="video/mp4" /></video>}
-              <div className="text item">
-                <p>{data[id].description}</p>
-              </div>
-              </a>
-            </div>
-   ))}
-  </div>
+    <div className='products'>
+      {Object.keys(data).map((id) => (
+        <div key={id}>
+          <h2>{data[id].name}</h2>
+          {/* Load sample text */}
+          <EditableContent 
+            title={data[id].metadata.typeface_family.name} 
+            text={data[id].metadata.typeface_family.sample_text[0]["en_us"]}
+            fontFamily={data[id].name}
+            link={data[id].metadata.typeface_family.name.toLowerCase().replace(/\s+/g, '-')}
+            showDownload={true}
+          />
+        </div>
+      ))}
+    </div>
   );
 }
 

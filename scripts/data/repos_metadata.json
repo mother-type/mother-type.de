@@ -1,0 +1,127 @@
+[
+  {
+    "name": "CoasterSans",
+    "metadata": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "typeface_family": {
+        "name": "Coaster Sans",
+        "description": "A new chunky display font that will make you feel like you're riding the waves back home.",
+        "tags": [
+          "sans-serif",
+          "incomplete"
+        ],
+        "repository_url": "https://github.com/mother-type/CoasterSans",
+        "project_url": "https://mother-type.de/fonts/coaster-sans",
+        "tools": [
+          "Glyphs"
+        ],
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
+        ],
+        "writing_systems": [
+          "Latin"
+        ],
+        "published": [
+          2023
+        ],
+        "license": [
+          "SIL Open Font License, Version 1.1"
+        ],
+        "sample_text": [
+          {
+            "en_us": "dangerous river of greed."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "SeaweedSans",
+    "metadata": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "typeface_family": {
+        "name": "Seaweed Sans",
+        "description": "Click clack on your typewriter underwater at the crab cafe with Seaweed.",
+        "tags": [
+          "pixel",
+          "monospace"
+        ],
+        "repository_url": "https://github.com/mother-type/SeaweedSans",
+        "project_url": "https://mother-type.de/fonts/seaweed-sans",
+        "tools": [
+          "Glyphs"
+        ],
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
+        ],
+        "writing_systems": [
+          "Latin"
+        ],
+        "published": [
+          2023
+        ],
+        "license": [
+          "SIL Open Font License, Version 1.1"
+        ],
+        "sample_text": [
+          {
+            "en_us": "the flow of roads"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "BodySans",
+    "metadata": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "typeface_family": {
+        "name": "Body Sans",
+        "description": "You've seen kitsch body fonts, but you haven't seen one that's literally my body. Great for resumes and businesses. If you are a corporation, please reach out directly regarding a business license.",
+        "tags": [
+          "decorative"
+        ],
+        "repository_url": "https://github.com/mother-type/BodySans",
+        "project_url": "https://mother-type.de/fonts/body-sans",
+        "tools": [
+          "Glyphs"
+        ],
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
+        ],
+        "writing_systems": [
+          "Latin"
+        ],
+        "published": [
+          2023
+        ],
+        "license": [
+          "SIL Open Font License, Version 1.1"
+        ],
+        "sample_text": [
+          {
+            "en_us": "The Devilish Depths Within"
+          }
+        ]
+      }
+    }
+  }
+]

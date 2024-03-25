@@ -17,6 +17,7 @@ function EditableContent(props) {
   };
 
   return (
+    
     <div className='editableContentWrapper'>
       <div className='editableRow'>
         <div className='flex'>
@@ -33,10 +34,24 @@ function EditableContent(props) {
           {props.showDownload && <a className="refresh-button" href={`/fonts/${props.link}`}>Download ➬</a>}
 
         </div>
+        <style>
+          {`
+            @font-face {
+              font-family: '${props.fontFamily}';
+              src: url('https:raw.githubusercontent.com/mother-type/${props.fontFamily}/main/fonts/${props.fontFamily}-Regular.woff') format('woff');
+              /* Add additional font formats if necessary */
+            }
+
+            .${props.fontFamily}-class {
+              font-family: '${props.fontFamily}', sans-serif;
+              /* Use the custom class where you want to apply this font */
+            }
+          `}
+        </style>
       <div
-        className='editableContent'
         contentEditable={true}
         spellCheck={false}
+        className={props.fontFamily + "-class editableContent"}
         style={{
           fontFamily: props.fontFamily,
           fontSize: `${fontSize}px`,
