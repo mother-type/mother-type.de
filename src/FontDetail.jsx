@@ -66,10 +66,7 @@ function Font({ fontData }) {
 	} = typeface_family || {};
   
 	return (
-		<div className="blog">
-			<a href="/" className="home-button">
-				<u>←</u>
-			</a>
+		<div className='font'>
 			<h2>{fontName}</h2>
 			<EditableContent
 				title={fontName}
@@ -78,16 +75,17 @@ function Font({ fontData }) {
 				link={fontName.toLowerCase().replace(/\s+/g, "-") || "#"}
 				showDownload={false}
 			/>
-			<p>{description}</p>
-			<div className="flex">
-				<a className="refresh-button" href={`https://github.com/mother-type/${name}/raw/main/fonts/${name}.zip`} download>
-					<u>Download Specimen ➬</u>
-				</a>
-				<a className={project_url ? "refresh-button" : "hidden"} href={project_url || "#"}>
-					<u>Source Files</u>
-				</a>
-			</div>
-			<table>
+			<div className="font-detail">
+			<div className='flex-child'>
+				<div className="flex">
+					<a className="refresh-button" href={`https://github.com/mother-type/${name}/raw/main/fonts/${name}.zip`} download>
+						<u>Download Specimen ➬</u>
+					</a>
+					<a className={project_url ? "refresh-button" : "hidden"} href={project_url || "#"}>
+						<u>Source Files</u>
+					</a>
+				</div>
+				<table>
 				<thead>
 					<tr>
 						<th>Category</th>
@@ -125,11 +123,16 @@ function Font({ fontData }) {
 					</tr>
 				</tbody>
 			</table>
+			</div>
+			<div className='flex-child'>
+				<h3>About {fontName}</h3>
+				<p>{description}</p>
+			</div>
+
+			</div>
 			<AlphabetLayout
 				fontFamily={name} 
-			/>
-			<br />
-			<br />
+			/>			
 		</div>
 	);
 }

@@ -101,6 +101,7 @@ footer {
 	transition: background-color 0.3s; /* Add a smooth transition effect */
 	border-radius: 5px;
 	transition: all .2s;
+	text-align: center;
   }
   
   .editableContent:focus,
@@ -217,3 +218,18 @@ th {
 	font-size: 10rem;
 	padding: 8rem;
 }
+
+.font-detail {
+	display: flex;
+	justify-content: space-between; /* Align items with space between them */
+	gap: 2rem;
+
+  }
+  
+  .flex-child {
+	flex-basis: 50%; /* Take up 50% of the available space */
+  }
+
+  .font {
+	margin-bottom: 4rem;
+  }

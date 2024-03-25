@@ -80,20 +80,6 @@ import { useState } from 'react';
   
   const diacritics = ['¨', '˙', '`', '´', '˝', 'ˆ', 'ˇ', '˘', '˚', '˜', '¯', '¸', '˛', 'ʼ', 'ʻ'];
   
-  // Please note that the following arrays contain mixed data types
-  
-  const cv01 = [
-    'A', 'Á', 'Ă', 'Ǎ', 'Â', 'Ä', 'Ạ', 'À', 'Ā', 'Ą', 'Å', 'Ã'
-  ];
-  
-  const cv02 = [
-    'A', 'Á', 'Ă', 'Ǎ', 'Â', 'Ä', 'Ạ', 'À', 'Ā', 'Ą', 'Å', 'Ã'
-  ];
-  
-  const cv03 = [
-    'A', 'Á', 'Ă', 'Ǎ', 'Â', 'Ä', 'Ạ', 'À', 'Ā', 'Ą', 'Å', 'Ã'
-  ];
-  
 
 function AlphabetLayout(props) {
   const [selectedLetter, setSelectedLetter] = useState('A');
@@ -140,9 +126,6 @@ function AlphabetLayout(props) {
         {generateList('Currency Symbols', currencySymbols)}
         {generateList('Arrows', arrows)}
         {generateList('Diacritics', diacritics)}
-        {generateList('cv01', cv01)}
-        {generateList('cv02', cv02)}
-        {generateList('cv03', cv03)}
       </div>
     </div>
   );
