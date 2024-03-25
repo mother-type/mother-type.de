@@ -99,14 +99,11 @@ a,u {
   .editableContent:hover {
 	background-color: #dbdbdb; /* Change the background color when focused */
   }
-  
-  /* Add this CSS to your stylesheet */
-.refresh-button {
+
+  .button {
 	background-color: #9DBEFF;
 	color: black;
 	border: 1px solid;
-	border-top: none;
-	border-right: none;
 	padding: 10px 15px;
 	cursor: pointer;
 	font-size: 16px;
@@ -114,6 +111,12 @@ a,u {
 	align-items: center;
 	justify-content: center;
 	transition: all .2s;
+  }
+  
+  /* Add this CSS to your stylesheet */
+.refresh-button {
+	border-top: none;
+	border-right: none;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -126,6 +129,10 @@ a,u {
   .refresh-button:hover {
 	background-color: #c9dbff; /* Background color for the button */
 	border-bottom-left-radius: 15px;
+  }
+
+  .button +  .button {
+	margin-left: 10px;
   }
   
   
@@ -187,13 +194,13 @@ th {
 
   }
   
-  .flex-child {
-	flex-basis: 50%; /* Take up 50% of the available space */
-  }
+.flex-child {
+flex-basis: 50%; /* Take up 50% of the available space */
+}
 
-  .font {
-	margin-bottom: 4rem;
-  }
+.font {
+margin-bottom: 4rem;
+}
 
 
   /* Grid */
@@ -215,15 +222,6 @@ th {
 
 .condensed-grid .grid-item {
 	padding: 1rem;
-}
-
-.text {
-	padding: 1rem;
-	padding-top: 1.5rem;
-}
-
-.collage {
-	filter: invert();
 }
 
 .grid-item {
@@ -275,35 +273,6 @@ a:hover img {
 .span-2 {
 	grid-column-end: span 2;
 	grid-row-end: span 1;
-}
-
-.span-6 {
-	grid-column-end: span 6;
-	grid-row-end: span 1;
-	border-top: none;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.span-6:hover {
-	background-color: #f4f400;
-	color: #000;
-	opacity: 1;
-}
-
-.span-6 .text {
-	padding: .75rem;
-}
-
-.span-6:first-child {
-	border-top: 1px dotted;
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-}
-
-.span-6:last-child {
-	border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
 }
 
 .span-3 {
