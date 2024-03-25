@@ -1,5 +1,5 @@
 :root {
-	--background-color: #e4e4e4;
+	--background-color: #ffffff;
 	--text-color: #565454;
 }
 
@@ -181,4 +181,39 @@ th, td {
 
 th {
 	background-color: #f2f2f2;
+}
+
+.font-glyphs-list {
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.font-glyphs-list li {
+	font-size: 1.5rem;
+	line-height: 4rem;
+	flex-basis: 4rem;	
+	flex-shrink: 0;
+	border: 1px solid #dddddd;
+	/* margin: 0px -1px -1px 0px; */
+	text-align: center;
+	transition: background-color var(--transition-fast);
+}
+
+.font-glyphs-list li:hover {
+	border: 1px solid black;
+	background-color: rgb(215, 215, 215);
+}
+
+.font-glyphs-list.selected {
+	margin-top: 4rem;
+}
+
+.font-glyphs-list.selected li {
+	font-size: 10rem;
+	padding: 8rem;
 }

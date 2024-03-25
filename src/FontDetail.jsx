@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import EditableContent from './EditableContent';
+import AlphabetLayout from './AlphabetLayout';
 
 function FontDetail() {
   const { id } = useParams();
@@ -124,6 +125,9 @@ function Font({ fontData }) {
 					</tr>
 				</tbody>
 			</table>
+			<AlphabetLayout
+				fontFamily={name} 
+			/>
 			<br />
 			<br />
 		</div>

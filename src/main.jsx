@@ -10,8 +10,6 @@ import Header from './Header.jsx'
 import FontDetail from './FontDetail.jsx'
 import './index.css'
 import FourOhFour from './404.jsx';
-import CheckoutForm from './CheckoutForm.jsx';
-import Return from './Return.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,13 +22,7 @@ const router = createBrowserRouter([
   },
   { path: "*", 
     element: <FourOhFour />,  
-  },
-  { path: "/checkout", 
-    element: <CheckoutForm />,  
-  },
-  { path: "/return", 
-    element: <Return />,  
-},
+  }
 ]);
 
 
