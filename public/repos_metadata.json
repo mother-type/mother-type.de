@@ -39,7 +39,8 @@
           }
         ]
       }
-    }
+    },
+    "url": "coaster-sans"
   },
   {
     "name": "SeaweedSans",
@@ -81,7 +82,8 @@
           }
         ]
       }
-    }
+    },
+    "url": "seaweed-sans"
   },
   {
     "name": "BodySans",
@@ -122,6 +124,7 @@
           }
         ]
       }
-    }
+    },
+    "url": "body-sans"
   }
 ]

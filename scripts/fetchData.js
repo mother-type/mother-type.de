@@ -11,6 +11,11 @@ const currentFileUrl = new URL(import.meta.url);
 const currentDir = path.dirname(currentFileUrl.pathname);
 const outputFile = path.join(currentDir, '..', 'public', 'repos_metadata.json'); // Adjusted output path
 
+// Function to convert CamelCase to kebab-case
+function camelToKebabCase(str) {
+  return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+}
+
 async function fetchData() {
   try {
     const response = await fetch(apiUrl);
@@ -29,7 +34,7 @@ async function fetchData() {
           const metadata = await response.json();
           if (metadata && metadata.type === 'file') {
             const metadataContent = Buffer.from(metadata.content, 'base64').toString('utf-8');
-            return { name: repo.name, metadata: YAML.parse(metadataContent) };
+            return { name: repo.name, metadata: YAML.parse(metadataContent), url: camelToKebabCase(repo.name) };
           }
         }
       } catch (error) {

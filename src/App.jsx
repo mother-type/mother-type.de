@@ -31,7 +31,7 @@ function App() {
             title={data[id].metadata.typeface_family.name} 
             text={data[id].metadata.typeface_family.sample_text[0]["en_us"]}
             fontFamily={data[id].name}
-            link={data[id].metadata.typeface_family.name.toLowerCase().replace(/\s+/g, '-')}
+            link={data[id].url}
             showDownload={true}
           />
         </div>
