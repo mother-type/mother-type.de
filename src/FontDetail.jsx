@@ -67,7 +67,6 @@ function Font({ fontData }) {
   
 	return (
 		<div className='font'>
-			<h2>{fontName}</h2>
 			<EditableContent
 				title={fontName}
 				text={sampleText[0]?.en_us || "N/A"}

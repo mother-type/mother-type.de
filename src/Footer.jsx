@@ -11,10 +11,9 @@ function Footer() {
             itsmothertype@gmail.com
           </a>
         </div>
-				<div className="grid-item span-2"></div>
+				<div className="grid-item span-3"></div>
 				<div className="grid-item"><a href="https://www.are.na/mother-type">are.na</a></div>
       </div>
-      <br />
     </footer>
   );
 }

@@ -25,8 +25,6 @@ function App() {
     <div className='products'>
       {Object.keys(data).map((id) => (
         <div key={id}>
-          <h2>{data[id].name}</h2>
-          {/* Load sample text */}
           <EditableContent 
             title={data[id].metadata.typeface_family.name} 
             text={data[id].metadata.typeface_family.sample_text[0]["en_us"]}

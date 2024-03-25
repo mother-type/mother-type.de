@@ -106,7 +106,7 @@ function AlphabetLayout(props) {
   };
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', padding: "1rem" }}>
       <div style={{ flex: '30%' }}>
         <ul className="font-glyphs-list selected">
           <li className={props.fontFamily + "-class"}>{selectedLetter}</li>
