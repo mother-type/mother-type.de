@@ -9,7 +9,7 @@ const apiUrl = `https://api.github.com/orgs/${orgName}/repos`;
 // Get the directory name using import.meta.url
 const currentFileUrl = new URL(import.meta.url);
 const currentDir = path.dirname(currentFileUrl.pathname);
-const outputFile = path.join(currentDir, 'data', 'repos_metadata.json');
+const outputFile = path.join(currentDir, '..', 'public', 'repos_metadata.json'); // Adjusted output path
 
 async function fetchData() {
   try {
