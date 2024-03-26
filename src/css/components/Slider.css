@@ -1,0 +1,61 @@
+/* Circle before slider */
+.Slider__container {
+    display: flex;
+    align-items: center;
+}
+  
+.Slider__container::before,
+.Slider__container::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; /* Circle shape */
+  background: white; /* Circle color */
+  border: 1px solid black;
+}
+
+/* Circle before slider */
+.Slider__container::before {
+  margin-right: -10px; /* Adjust spacing as needed */
+  z-index: 100000;
+}
+
+/* Circle after slider */
+.Slider__container::after {
+  margin-left: -10px; /* Adjust spacing as needed */
+  z-index: 100000;
+}
+
+/* Slider styling */
+.Slider {
+  -webkit-appearance: none;
+  width: calc(240px - 30px); /* Adjust for circles */
+  height: 1px;
+  border-radius: 5px;
+  background: #D9D9D9; /* Gray background */
+  outline: none;
+  margin: 20px 0;
+  border: black;
+}
+
+.Slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Increase thumb width */
+  height: 20px; /* Increase thumb height */
+  border-radius: 50%; /* Circle shape */
+  background: #888; /* Thumb color */
+  cursor: pointer;
+  margin-top: -10px; /* Adjust thumb position */
+}
+
+
+/* Two round circles on either end */
+.Slider::-webkit-slider-thumb:first-child {
+  margin-left: -10px; /* Offset to the left */
+}
+
+.Slider::-webkit-slider-thumb:last-child {
+  margin-right: -10px; /* Offset to the right */
+}

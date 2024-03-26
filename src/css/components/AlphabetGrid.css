@@ -1,0 +1,48 @@
+.AlphabetGrid {
+	display: flex;	
+	padding: 1rem;
+}
+
+.AlphabetGrid__sidebar {
+	flex: 30%;
+}
+
+.AlphabetGrid__main {
+	flex: 30%;
+}
+
+
+.AlphabetGrid__glyphs-list {
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.AlphabetGrid__glyphs-list li {
+	font-size: 1.5rem;
+	line-height: 4rem;
+	flex-basis: 4rem;	
+	flex-shrink: 0;
+	border: 1px solid #dddddd;
+	/* margin: 0px -1px -1px 0px; */
+	text-align: center;
+	transition: background-color var(--transition-fast);
+}
+
+.AlphabetGrid__glyphs-list li:hover {
+	border: 1px solid black;
+	background-color: rgb(215, 215, 215);
+}
+
+.AlphabetGrid__glyphs-listt.selected {
+	margin-top: 4rem;
+}
+
+.AlphabetGrid__glyphs-list.selected li {
+	font-size: 10rem;
+	padding: 8rem;
+}

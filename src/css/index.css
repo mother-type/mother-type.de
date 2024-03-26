@@ -1,0 +1,107 @@
+:root {
+	--background-color: #ffffff;
+	--text-color: #000000;
+}
+
+@font-face {
+	font-family: 'Neue Montreal';
+	src: url("../fonts/PPNeueMontreal-Regular.woff2") format("woff2"), /* WOFF 2.0 */
+		 url("../fonts/PPNeueMontreal-Regular.woff") format("woff"); /* WOFF 1.0 */
+  }
+  
+  @font-face {
+	font-family: 'Neue Montreal';
+	src: url("../fonts/PPNeueMontreal-Bold.woff2") format("woff2"), /* WOFF 2.0 */
+		 url("../fonts/PPNeueMontreal-Bold.woff") format("woff"); /* WOFF 1.0 */
+	font-weight: 700;
+  }
+  
+  @font-face {
+	font-family: 'Neue Montreal';
+	src: url("../fonts/PPNeueMontreal-Italic.woff2") format("woff2"), /* WOFF 2.0 */
+		 url("../fonts/PPNeueMontreal-Italic.woff") format("woff"); /* WOFF 1.0 */
+	font-style: italic;
+  }
+  
+  @font-face {
+	font-family: 'Neue Montreal';
+	src: url("../fonts/PPNeueMontreal-BoldItalic.woff2") format("woff2"), /* WOFF 2.0 */
+		 url("../fonts/PPNeueMontreal-BoldItalic.woff") format("woff"); /* WOFF 1.0 */
+	font-weight: 700;
+	font-style: italic;
+  }
+  
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	background-color: var(--background-color);
+	border-color: var(--text-color);
+	color: var(--text-color);
+	font-family: 'Neue Montreal', sans-serif;
+	font-display: swap;
+	line-height: 1.5;
+}
+
+a,u {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 1px dashed;
+	border-color: inherit;
+}
+
+.logo {
+	margin: 0;
+}
+
+
+.flex {
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.flex-child {
+	flex-basis: 50%; 
+}
+
+/* Misc Pages CSS  */
+
+.Detail {
+	display: flex;
+	justify-content: space-between; 
+	gap: 2rem;
+	padding: 1rem;
+}
+
+.FourOhFour__main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+  
+.FourOhFour__emoji {
+	font-size: 18rem;
+	line-height: 0;
+	color: #df000f;
+	animation: rotateEmoji 10s linear infinite; 
+	transform-origin: center; 
+	width: min-content;
+  }
+  
+  @keyframes rotateEmoji {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  

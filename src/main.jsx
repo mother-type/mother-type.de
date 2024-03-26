@@ -4,17 +4,17 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App.jsx'
-import Footer from './Footer.jsx'
-import Header from './Header.jsx'
-import FontDetail from './FontDetail.jsx'
-import './index.css'
-import FourOhFour from './404.jsx';
+import Home from './pages/Home.jsx'
+import Footer from './layouts/Footer.jsx'
+import Header from './layouts/Header.jsx'
+import FontDetail from './pages/Detail.jsx'
+import './css/index.css'
+import FourOhFour from './pages/404.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "fonts/:id",

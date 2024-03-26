@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import EditableContent from './EditableContent.jsx';
+import FontDemo from '../components/FontDemo.jsx';
 
-function App() {
+function Home() {
   const [data, setData] = useState({});
 
   useEffect(() => {
@@ -22,10 +22,10 @@ function App() {
   }, []);
 
   return (
-    <div className='products'>
+    <div>
       {Object.keys(data).map((id) => (
         <div key={id}>
-          <EditableContent 
+          <FontDemo 
             title={data[id].metadata.typeface_family.name} 
             text={data[id].metadata.typeface_family.sample_text[0]["en_us"]}
             fontFamily={data[id].name}
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

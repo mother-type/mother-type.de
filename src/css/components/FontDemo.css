@@ -1,0 +1,38 @@
+.FontDemo__wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	margin: 0px 8px;
+	margin-bottom: 2rem;
+	border: 1px solid black;
+}
+
+.FontDemo__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.FontDemo__title {
+	font-weight: 400;
+}
+
+.FontDemo__content {
+	line-height: 1.0;
+	display: block;
+	font-size: 25px;
+	outline: 0;
+	max-width: 100vw;
+	padding: 20px;
+	background-color: #F0F0F0; /* Set the default background color to white */
+	transition: background-color 0.3s; /* Add a smooth transition effect */
+	transition: all .2s;
+	text-align: center;
+  }
+  
+  .FontDemo__content:focus,
+  .FontDemo__content:hover {
+	background-color: #dbdbdb; /* Change the background color when focused */
+  }

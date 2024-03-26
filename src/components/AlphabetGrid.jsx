@@ -1,5 +1,5 @@
 // CSS
-import "./index.css";
+import "../css/components/AlphabetGrid.css";
 import { useState } from 'react';
 
   const uppercase = [
@@ -79,9 +79,10 @@ import { useState } from 'react';
   const arrows = ['↑', '↗', '→', '↘', '↓', '↙', '←', '↖', '↔', '↕'];
   
   const diacritics = ['¨', '˙', '`', '´', '˝', 'ˆ', 'ˇ', '˘', '˚', '˜', '¯', '¸', '˛', 'ʼ', 'ʻ'];
+
   
 
-function AlphabetLayout(props) {
+function AlphabetGrid(props) {
   const [selectedLetter, setSelectedLetter] = useState('A');
 
   // Function to handle click on list item
@@ -94,7 +95,7 @@ function AlphabetLayout(props) {
     return (
       <div>
         <h3>{title}</h3>
-        <ul className="font-glyphs-list">
+        <ul className="AlphabetGrid__glyphs-list">
           {items.map((item, index) => (
             <li key={index} onClick={() => handleLetterClick(item)} className={props.fontFamily + "-class"}>
               {item}
@@ -106,13 +107,13 @@ function AlphabetLayout(props) {
   };
 
   return (
-    <div style={{ display: 'flex', padding: "1rem" }}>
-      <div style={{ flex: '30%' }}>
-        <ul className="font-glyphs-list selected">
+    <div className="AlphabetGrid">
+      <div className="AlphabetGrid__sidebar">
+        <ul className="AlphabetGrid__glyphs-list selected">
           <li className={props.fontFamily + "-class"}>{selectedLetter}</li>
         </ul>
       </div>
-      <div style={{ flex: '70%' }}>
+      <div className="AlphabetGrid__main">
         {generateList('Uppercase', uppercase)}
         {generateList('Uppercase Extended', uppercaseExtended)}
         {generateList('Lowercase', lowercase)}
@@ -131,4 +132,4 @@ function AlphabetLayout(props) {
   );
 }
 
-export default AlphabetLayout;
+export default AlphabetGrid;

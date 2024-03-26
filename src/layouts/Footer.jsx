@@ -1,10 +1,9 @@
 // CSS
-import "./index.css";
+import "../css/elements/grid.css";
 
 function Footer() {
   return (
     <footer>
-      <br />
       <div className="grid-layout condensed-grid">
         <div className="grid-item span-2">
           <a href="mailto:itsmothertype@gmail.com">

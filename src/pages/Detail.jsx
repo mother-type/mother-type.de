@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import EditableContent from './EditableContent';
-import AlphabetLayout from './AlphabetLayout';
+import FontDemo from '../components/FontDemo.jsx';
+import AlphabetGrid from '../components/AlphabetGrid.jsx';
+import Table from '../components/Table.jsx';
 
-function FontDetail() {
+function Detail() {
   const { id } = useParams();
   const [fontData, setFontData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ function FontDetail() {
   }
 
   return (
-    <div className="products">
+    <div>
       <Font fontData={fontData} />
     </div>
   );
@@ -66,15 +67,15 @@ function Font({ fontData }) {
 	} = typeface_family || {};
   
 	return (
-		<div className='font'>
-			<EditableContent
+		<div>
+			<FontDemo
 				title={fontName}
 				text={sampleText[0]?.en_us || "N/A"}
 				fontFamily={name}
 				link={fontName.toLowerCase().replace(/\s+/g, "-") || "#"}
 				showDownload={false}
 			/>
-			<div className="font-detail">
+			<div className="Detail">
 			<div className='flex-child'>
 				<div className="flex">
 					<a className="button" href={`https://github.com/mother-type/${name}/raw/main/fonts/${name}.zip`} download>
@@ -84,44 +85,15 @@ function Font({ fontData }) {
 						<u>Source Files</u>
 					</a>
 				</div>
-				<table>
-				<thead>
-					<tr>
-						<th>Category</th>
-						<th>Data</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Designed by</td>
-						<td>{designer[0]?.name || "N/A"}</td>
-					</tr>
-					<tr>
-						<td>Built With</td>
-						<td>{tags.join(', ') || "N/A"}</td>
-					</tr>
-					<tr>
-						<td>Similar Fonts</td>
-						<td>{similar_fonts.join(', ') || "N/A"}</td>
-					</tr>
-					<tr>
-						<td>Built With</td>
-						<td>{tools}</td>
-					</tr>
-					<tr>
-						<td>Writing systems</td>
-						<td>{writing_systems}</td>
-					</tr>
-					<tr>
-						<td>License</td>
-						<td>{license}</td>
-					</tr>
-					<tr>
-						<td>Published</td>
-						<td>{published}</td>
-					</tr>
-				</tbody>
-			</table>
+				<Table
+					designer={designer}
+					tags={tags}
+					similarFonts={similar_fonts}
+					tools={tools}
+					writingSystems={writing_systems}
+					license={license}
+					published={published}
+				/>
 			</div>
 			<div className='flex-child'>
 				<h3>About {fontName}</h3>
@@ -129,7 +101,7 @@ function Font({ fontData }) {
 			</div>
 
 			</div>
-			<AlphabetLayout
+			<AlphabetGrid
 				fontFamily={name} 
 			/>			
 		</div>
@@ -137,5 +109,5 @@ function Font({ fontData }) {
 }
 
   
-export default FontDetail;
+export default Detail;
   
