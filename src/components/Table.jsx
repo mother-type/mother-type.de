@@ -15,7 +15,7 @@ function Table({ designer, tags, similarFonts, tools, writingSystems, license, p
           <td>{designer[0]?.name || "N/A"}</td>
         </tr>
         <tr>
-          <td>Built With</td>
+          <td>Tags</td>
           <td>{tags.join(', ') || "N/A"}</td>
         </tr>
         <tr>
