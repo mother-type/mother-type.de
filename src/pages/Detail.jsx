@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import FontDemo from '../components/FontDemo.jsx';
 import AlphabetGrid from '../components/AlphabetGrid.jsx';
+import ImageFetcher from '../components/ImageFetcher.jsx';
 import Table from '../components/Table.jsx';
 
 function Detail() {
@@ -101,6 +102,7 @@ function Font({ fontData }) {
 			</div>
 
 			</div>
+			<ImageFetcher repoName={name} />
 			<AlphabetGrid
 				fontFamily={name} 
 			/>			
