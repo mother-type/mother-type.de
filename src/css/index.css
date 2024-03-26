@@ -52,12 +52,17 @@ body {
 a,u {
 	text-decoration: none;
 	color: inherit;
-	border-bottom: 1px dashed;
+	/* border-bottom: 1px dashed; */
 	border-color: inherit;
+	transition: .2s all;
+	font-weight: 700;
+	font-style: italic;
 }
 
 .logo {
 	margin: 0;
+	text-transform: uppercase;
+	font-size: 30px;
 }
 
 
