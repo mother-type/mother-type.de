@@ -1,13 +1,13 @@
 import "../css/components/ColorPicker.css";
 
-function ColorPicker({ onColorChange }) {
+function ColorPicker({ onColorChange, text }) {
   const handleColorClick = (color) => {
     onColorChange(color);
   };
 
   return (
     <div>
-      <h4>Color</h4>
+      <h4>{text}</h4>
       <div className="ColorPicker">
         <div className="ColorPicker__option" style={{ backgroundColor: '#00D03B' }} onClick={() => handleColorClick('#00D03B')}></div>
         <div className="ColorPicker__option" style={{ backgroundColor: '#FF4141' }} onClick={() => handleColorClick('#FF4141')}></div>

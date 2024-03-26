@@ -63,7 +63,7 @@ function Font({ fontData }) {
 		writing_systems = "N/A",
 		license = "N/A",
 		published = "N/A",
-		project_url,
+		repository_url,
 	} = typeface_family || {};
   
 	return (
@@ -81,7 +81,7 @@ function Font({ fontData }) {
 					<a className="button" href={`https://github.com/mother-type/${name}/raw/main/fonts/${name}.zip`} download>
 						<u>Download Specimen ➬</u>
 					</a>
-					<a className={project_url ? "button" : "hidden"} href={project_url || "#"}>
+					<a className={repository_url ? "button" : "hidden"} href={repository_url || "#"}>
 						<u>Source Files</u>
 					</a>
 				</div>

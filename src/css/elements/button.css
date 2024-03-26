@@ -23,6 +23,8 @@
 
 .button:hover {
     background-color: var(--button-hover);
+    border-bottom-left-radius: 15px;
+    border-color: transparent;
 }
 
 

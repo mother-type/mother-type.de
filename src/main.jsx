@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
 import Footer from './layouts/Footer.jsx'
 import Header from './layouts/Header.jsx'
 import FontDetail from './pages/Detail.jsx'
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
   {
     path: "fonts/:id",

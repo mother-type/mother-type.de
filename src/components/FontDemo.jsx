@@ -51,7 +51,7 @@ function FontDemo(props) {
           onChange={setKerning}
           step={1}
         />
-        <ColorPicker onColorChange={handleColorChange} />
+        <ColorPicker onColorChange={handleColorChange} text={"Color"} />
         <br />
         {props.showDownload && <a className="button corner-button" href={`/fonts/${props.link}`}>Download ➬</a>}
       </div>
