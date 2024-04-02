@@ -80,7 +80,7 @@ function Font({ fontData }) {
 			<div className='flex-child'>
 				<div className="flex">
 					<a className="button" href={`https://github.com/mother-type/${name}/raw/main/fonts/${name}.zip`} download>
-						<u>Download Specimen ➬</u>
+						<u>Download Specimen</u>
 					</a>
 					<a className={repository_url ? "button" : "hidden"} href={repository_url || "#"}>
 						<u>Source Files</u>

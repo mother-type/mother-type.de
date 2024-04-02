@@ -11,6 +11,19 @@
 	flex: 30%;
 }
 
+@media only screen and (max-width: 1000px) {
+	.AlphabetGrid {
+		flex-direction: column;
+	}
+	.AlphabetGrid__sidebar {
+		flex: 100%;
+	}
+	
+	.AlphabetGrid__main {
+		flex: 100%;
+	}
+}
+
 
 .AlphabetGrid__glyphs-list {
 	margin: 0;
@@ -44,5 +57,5 @@
 
 .AlphabetGrid__glyphs-list.selected li {
 	font-size: 10rem;
-	padding: 8rem;
+	padding: 7rem;
 }

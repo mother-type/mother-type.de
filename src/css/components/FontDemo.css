@@ -30,7 +30,14 @@
 	transition: background-color 0.3s; /* Add a smooth transition effect */
 	transition: all .2s;
 	text-align: center;
+	word-wrap: break-word;
   }
+
+  @media only screen and (max-width: 1000px) {
+	.FontDemo__content {
+		font-size: 75px !important;
+	}
+}
   
   .FontDemo__content:focus,
   .FontDemo__content:hover {

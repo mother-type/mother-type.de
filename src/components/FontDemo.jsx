@@ -53,7 +53,7 @@ function FontDemo(props) {
         />
         <ColorPicker onColorChange={handleColorChange} text={"Color"} />
         <br />
-        {props.showDownload && <a className="button corner-button" href={`/fonts/${props.link}`}>Download ➬</a>}
+        {props.showDownload && <a className="button corner-button" href={`/fonts/${props.link}`}>Details ➬</a>}
       </div>
       <style>
       {`

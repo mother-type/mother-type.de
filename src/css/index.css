@@ -74,6 +74,11 @@ p {
 	display: flex;
 	margin-bottom: 2rem;
 }
+@media only screen and (max-width: 1000px) {
+	.flex {
+		flex-direction: column;
+	}
+}
 
 .flex-child {
 	flex-basis: 50%; 
@@ -97,6 +102,13 @@ p {
 	gap: 2rem;
 	padding: 1rem;
 }
+
+@media only screen and (max-width: 1000px) {
+	.Detail {
+		flex-direction: column;
+	}
+}
+
 
   
 .FourOhFour__emoji {

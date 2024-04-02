@@ -21,6 +21,14 @@
 	margin-left: 10px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .button +  .button {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+}
+
 .button:hover {
     background-color: var(--button-hover);
     border-bottom-left-radius: 15px;

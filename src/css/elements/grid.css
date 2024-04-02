@@ -24,8 +24,28 @@
 	border: 1px solid;
 }
 
+@media only screen and (max-width: 1000px) {
+	.condensed-grid .grid-item {
+		writing-mode: vertical-rl; /* Vertical writing mode from right to left */
+		white-space: nowrap; /* Prevent text from wrapping */
+	}
+}
+
+
+
 .grid-item + .grid-item {
 	margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	.grid-item + .grid-item {
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+	.condensed-grid .grid-item + .grid-item {
+		margin-top: 0rem !important;
+		margin-left: 0;
+	}
 }
 
 
