@@ -34,7 +34,12 @@ async function fetchData() {
           const metadata = await response.json();
           if (metadata && metadata.type === 'file') {
             const metadataContent = Buffer.from(metadata.content, 'base64').toString('utf-8');
-            return { name: repo.name, metadata: YAML.parse(metadataContent), url: camelToKebabCase(repo.name) };
+            const parsedMetadata = YAML.parse(metadataContent);
+
+            // Convert keys and values from kebab-case to snake_case
+            const convertedMetadata = convertToSnakeCase(parsedMetadata);
+
+            return { name: repo.name, metadata: convertedMetadata, url: camelToKebabCase(repo.name) };
           }
         }
       } catch (error) {
@@ -61,6 +66,24 @@ async function fetchData() {
     console.error('Error fetching and saving metadata:', error);
     process.exit(1);
   }
+}
+
+// Function to convert keys and values from kebab-case to snake_case
+function convertToSnakeCase(obj) {
+  if (typeof obj !== 'object' || obj === null) {
+    return obj;
+  }
+
+  if (Array.isArray(obj)) {
+    return obj.map(convertToSnakeCase);
+  }
+
+  return Object.fromEntries(
+    Object.entries(obj).map(([key, value]) => [
+      key.replace(/-/g, '_'), // Convert key from kebab-case to snake_case
+      typeof value === 'string' && value.includes('-') ? value.replace(/-/g, '_') : convertToSnakeCase(value) // Convert value from kebab-case to snake_case
+    ])
+  );
 }
 
 fetchData();

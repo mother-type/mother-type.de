@@ -3,7 +3,7 @@
     "name": "CoasterSans",
     "metadata": {
       "unified_font_repository_version": "0.3",
-      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified_Font_Repository/",
       "typeface_family": {
         "name": "Coaster Sans",
         "description": "A new chunky display font that will make you feel like you're riding the waves back home.",
@@ -11,8 +11,8 @@
           "sans-serif",
           "incomplete"
         ],
-        "repository_url": "https://github.com/mother-type/CoasterSans",
-        "project_url": "https://mother-type.de/fonts/coaster-sans",
+        "repository_url": "https://github.com/mother_type/CoasterSans",
+        "project_url": "https://mother_type.de/fonts/coaster_sans",
         "tools": [
           "Glyphs"
         ],
@@ -46,7 +46,7 @@
     "name": "SeaweedSans",
     "metadata": {
       "unified_font_repository_version": "0.3",
-      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified_Font_Repository/",
       "typeface_family": {
         "name": "Seaweed Sans",
         "description": "Click clack on your typewriter underwater at the crab cafe with Seaweed.",
@@ -54,8 +54,8 @@
           "pixel",
           "monospace"
         ],
-        "repository_url": "https://github.com/mother-type/SeaweedSans",
-        "project_url": "https://mother-type.de/fonts/seaweed-sans",
+        "repository_url": "https://github.com/mother_type/SeaweedSans",
+        "project_url": "https://mother_type.de/fonts/seaweed_sans",
         "tools": [
           "Glyphs"
         ],
@@ -89,15 +89,15 @@
     "name": "BodySans",
     "metadata": {
       "unified_font_repository_version": "0.3",
-      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified-Font-Repository/",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified_Font_Repository/",
       "typeface_family": {
         "name": "Body Sans",
         "description": "You've seen kitsch body fonts, but you haven't seen one that's literally my body. Great for resumes and businesses. If you are a corporation, please reach out directly regarding a business license.",
         "tags": [
           "decorative"
         ],
-        "repository_url": "https://github.com/mother-type/BodySans",
-        "project_url": "https://mother-type.de/fonts/body-sans",
+        "repository_url": "https://github.com/mother_type/BodySans",
+        "project_url": "https://mother_type.de/fonts/body_sans",
         "tools": [
           "Glyphs"
         ],
