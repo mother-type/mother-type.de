@@ -35,21 +35,27 @@ function FontDemo(props) {
         <button onClick={handleRefreshClick} className='button corner-button'>&#8635;</button>
         <Slider
           title="Size"
+          min={10}
+          max={500}
           value={fontSize}
           onChange={setFontSize}
           step={50}
         />
         <Slider
           title="Leading"
+          min={-15}
+          max={20}
           value={leading}
           onChange={setLeading}
-          step={0.1}
+          step={1}
         />
         <Slider
           title="Kerning"
+          min={-25}
+          max={50}
           value={kerning}
           onChange={setKerning}
-          step={1}
+          step={0.01}
         />
         <ColorPicker onColorChange={handleColorChange} text={"Color"} />
         <br />

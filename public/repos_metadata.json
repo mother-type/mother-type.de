@@ -126,5 +126,56 @@
       }
     },
     "url": "body-sans"
+  },
+  {
+    "name": "Oysters",
+    "metadata": {
+      "unified_font_repository_version": "0.3",
+      "unified_font_repository_url": "https://github.com/raphaelbastide/Unified_Font_Repository/",
+      "typeface_family": {
+        "name": "Oysters",
+        "desccription": "A decorative typeface inspired by oysters",
+        "tags": [
+          "sans-serif",
+          "pixel",
+          "monospace",
+          "incomplete",
+          "decorative"
+        ],
+        "repository_url": "https://github.com/mother_type/Oyster",
+        "project_url": "https://mother_type.de/oysters",
+        "tools": [
+          "Inkscape",
+          "Fontforge"
+        ],
+        "similar_fonts": [
+          "Helvetica",
+          "Neue Haas Grotesk"
+        ],
+        "designer": [
+          {
+            "name": "printer_scanner"
+          },
+          {
+            "url": "https://printerscanner.net"
+          }
+        ],
+        "writing_systems": [
+          "Latin"
+        ],
+        "published": [
+          2023
+        ],
+        "license": [
+          "SIL Open Font License, Version 1.1"
+        ],
+        "sample_text": [
+          {
+            "en_us": "The quick brown fox jumps over the lazy dog"
+          }
+        ]
+      }
+    },
+    "url": "oysters"
   }
 ]
