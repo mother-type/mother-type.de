@@ -1,23 +1,52 @@
-# Mother
 
-Welcome to the our ethereal realm, where typography transcends mere letters and emerges as a canvas. This Readme is your guide to navigating our site, a sanctuary for the avant-garde.
+# Mother Type
 
-## About Mother Type
+Mother Type is an open-source type foundry dedicated to making typography more accessible. We offer a collection of typefaces that are free to use, modify, and distribute under the SIL Open Font License (OFL). Our mission is to foster creativity and collaboration within the design community.
 
-Mother Type is not just a foundry; it's an artistic manifesto, a tapestry of letters and symbols woven into expressions of the soul. Our passion lies in crafting typefaces that breathe life into design projects, each character a stroke of brilliance and rebellion.
+## About
 
-## Data
+Mother Type is an open-source type foundry.
 
-All font data is pulled in from the `METADATA.yml` file in their respective repositories. To fetch data call `yarn fetch-data`
+We are committed to making type design more accessible, and all our typefaces are available for use, distribution, and collaboration via the SIL Open Font License (OFL). With this license, everyone is free to use, modify, and distribute our typefaces. We ask that you credit the designer and foundry when using our typefaces.
+
+Our typefaces are shared and distributed via the Unified Font Repository. These repositories also serve as the Content Management System for this website. Change or update the typefaces repository, and the site will change with it. This site's main function is as a visual directory of updatable fonts, providing the user with the most up-to-date version of a typeface at any time, and hopefully, avenues for collaboration.
+
+## Submissions
+
+If you would like to submit a font, email us at [itsmothertype@gmail.com](mailto:itsmothertype@gmail.com), or make a fork of the Unified Font Repository on [GitHub](https://github.com/mother-type).
+
+## Installation and Setup
+
+To set up the project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mother-type/Unified-Font-Repository.git
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   yarn
+   ```
 
 
-## Usage
+3. **Fetch the latest font data** (optional):
+   ```bash
+   yarn fetch-data
+   ```
 
-To install run `yarn && yarn dev`
+4. **Run the development server**:
+   ```bash
+   yarn dev
+   ```
 
 
-The Mother Team
+## License
 
+All our typefaces are distributed under the [SIL Open Font License (OFL)](https://scripts.sil.org/OFL). Please credit the designer and foundry when using our typefaces.
 
-website: `mother-type.de`
-email: `itsmothertype@gmail.com`
+## Contact
+
+- **Email**: [itsmothertype@gmail.com](mailto:itsmothertype@gmail.com)
+- **Website**: [mother-type.de](https://mother-type.de)
+
