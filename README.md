@@ -1,7 +1,7 @@
 
 # Mother Type
 
-Mother Type is an open-source type foundry dedicated to making typography more accessible. We offer a collection of typefaces that are free to use, modify, and distribute under the SIL Open Font License (OFL). Our mission is to foster creativity and collaboration within the design community.
+ Mother Type is an open-source type foundry exploring an open model for typefaces that are free to use, modify, and distribute under the SIL Open Font License (OFL). Our mission is to foster creativity and collaboration within the type community.
 
 ## About
 
@@ -19,23 +19,22 @@ If you would like to submit a font, email us at [itsmothertype@gmail.com](mailto
 
 To set up the project locally:
 
-1. **Clone the repository**:
+**Clone the repository**:
    ```bash
-   git clone https://github.com/mother-type/Unified-Font-Repository.git
+   gh repo clone mother-type/mother-type.de
    ```
 
-2. **Install dependencies**:
+**Install dependencies**:
    ```bash
    yarn
    ```
 
-
-3. **Fetch the latest font data** (optional):
+**Fetch the latest font data** (optional):
    ```bash
    yarn fetch-data
    ```
 
-4. **Run the development server**:
+ **Run the development server**:
    ```bash
    yarn dev
    ```
@@ -47,6 +46,6 @@ All our typefaces are distributed under the [SIL Open Font License (OFL)](https:
 
 ## Contact
 
-- **Email**: [itsmothertype@gmail.com](mailto:itsmothertype@gmail.com)
-- **Website**: [mother-type.de](https://mother-type.de)
+**Email**: [itsmothertype@gmail.com](mailto:itsmothertype@gmail.com)
+**Website**: [mother-type.de](https://mother-type.de)
 
