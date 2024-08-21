@@ -17,14 +17,13 @@
 
 /* Circle before slider */
 .Slider__container::before {
-  margin-right: -10px; /* Adjust spacing as needed */
-  z-index: 100000;
+  margin-right: 0px; /* Adjust spacing as needed */
+  z-index: 0;
 }
 
 /* Circle after slider */
 .Slider__container::after {
-  margin-left: -10px; /* Adjust spacing as needed */
-  z-index: 100000;
+  margin-left: 0px; /* Adjust spacing as needed */
 }
 
 /* Slider styling */

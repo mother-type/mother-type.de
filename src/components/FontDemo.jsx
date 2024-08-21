@@ -7,7 +7,7 @@ import '../css/elements/button.css';
 
 function FontDemo(props) {
   const [fontSize, setFontSize] = useState(100);
-  const [leading, setLeading] = useState(1);
+  const [leading, setLeading] = useState(1.2);
   const [kerning, setKerning] = useState(1);
   const [content, setContent] = useState(props.text);
   const [textColor, setTextColor] = useState('#000000');
@@ -23,7 +23,7 @@ function FontDemo(props) {
 
   const handleRefreshClick = () => {
     setFontSize(58);
-    setLeading(1);
+    setLeading(1.2);
     setKerning(0);
     setContent(getRandomSampleText());
   };
@@ -36,26 +36,26 @@ function FontDemo(props) {
         <Slider
           title="Size"
           min={10}
-          max={500}
+          max={200}
           value={fontSize}
           onChange={setFontSize}
-          step={50}
+          step={20}
         />
         <Slider
           title="Leading"
-          min={-15}
-          max={20}
+          min={.5}
+          max={3}
           value={leading}
           onChange={setLeading}
-          step={1}
+          step={.1}
         />
         <Slider
           title="Kerning"
           min={-25}
-          max={50}
+          max={25}
           value={kerning}
           onChange={setKerning}
-          step={0.01}
+          step={1}
         />
         <ColorPicker onColorChange={handleColorChange} text={"Color"} />
         <br />

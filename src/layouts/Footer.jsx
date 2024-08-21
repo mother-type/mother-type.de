@@ -6,11 +6,7 @@ function Footer() {
   return (
     <footer>
       <div className="grid-layout condensed-grid">
-        <div className="grid-item">
-          <a href="/">
-            <h2 className="logo">Mother</h2>
-          </a>
-        </div>
+        <MenuItem href="/" color="black" text="Mother" logo={true} />
         <MenuItem href="/about" color="green" text="About" />
         <MenuItem href="mailto:itsmothertype@gmail.com" color="red" text="Mail" />
         <MenuItem href="https://www.are.na/printer-scanner-studio" color="blue" text="Are.na" />

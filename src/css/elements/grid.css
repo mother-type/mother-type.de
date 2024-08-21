@@ -97,7 +97,7 @@
 }
   
   .green {
-	--item-color: #00D03B;
+	--item-color: #3ED76A;
 	border-color: var(--item-color);
   }
   
@@ -134,4 +134,14 @@
   .gray:hover {
 	background-color: var(--item-color);
 	color: black;
+  }
+
+  .black {
+	--item-color: #222222;
+	border-color: var(--item-color);
+  }
+  
+  .black:hover {
+	background-color: var(--item-color);
+	color: white;
   }
