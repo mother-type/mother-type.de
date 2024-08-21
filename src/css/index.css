@@ -59,6 +59,10 @@ a,u {
 	font-style: italic;
 }
 
+a:hover {
+	color: red;
+}
+
 p {
 	font-size: 1.1rem;
 }

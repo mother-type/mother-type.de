@@ -33,6 +33,7 @@
     background-color: var(--button-hover);
     border-bottom-left-radius: 15px;
     border-color: transparent;
+    color: black;
 }
 
 
@@ -45,6 +46,7 @@
 }
 
 .corner-button:hover {
+    color: black;
     border-bottom-left-radius: 15px;
 }
 
