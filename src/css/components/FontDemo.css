@@ -33,11 +33,7 @@
 	word-wrap: break-word;
   }
 
-  @media only screen and (max-width: 1000px) {
-	.FontDemo__content {
-		font-size: 75px !important;
-	}
-}
+
   
   .FontDemo__content:focus,
   .FontDemo__content:hover {

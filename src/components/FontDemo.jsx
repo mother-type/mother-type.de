@@ -6,7 +6,7 @@ import '../css/components/FontDemo.css';
 import '../css/elements/button.css';
 
 function FontDemo(props) {
-  const [fontSize, setFontSize] = useState(100);
+  const [fontSize, setFontSize] = useState(75);
   const [leading, setLeading] = useState(1.2);
   const [kerning, setKerning] = useState(1);
   const [content, setContent] = useState(props.text);
@@ -22,7 +22,7 @@ function FontDemo(props) {
   };
 
   const handleRefreshClick = () => {
-    setFontSize(58);
+    setFontSize(75);
     setLeading(1.2);
     setKerning(0);
     setContent(getRandomSampleText());
