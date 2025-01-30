@@ -9,7 +9,7 @@ function Footer() {
         <MenuItem href="/" color="black" text="Mother" logo={true} />
         <MenuItem href="/about" color="green" text="About" />
         <MenuItem href="mailto:itsmothertype@gmail.com" color="red" text="Mail" />
-        <MenuItem href="https://www.are.na/printer-scanner-studio" color="blue" text="Are.na" />
+        <MenuItem href="https://www.are.na/printer-scanner" color="blue" text="Are.na" />
         <MenuItem href="https://www.github.com/mother-type" color="gray" text="Github" />
         <MenuItem href="https://printerscanner.net" color="black" text="Printer Scanner Studio" />
       </div>
