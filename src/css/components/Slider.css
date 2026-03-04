@@ -10,9 +10,11 @@
   display: block;
   width: 15px;
   height: 15px;
-  border-radius: 50%; /* Circle shape */
-  background: white; /* Circle color */
+  border-radius: 50%;
+  background: white;
   border: 1px solid black;
+  align-self: center;
+  flex-shrink: 0;
 }
 
 /* Circle before slider */
@@ -29,32 +31,48 @@
 /* Slider styling */
 .Slider {
   -webkit-appearance: none;
-  width: calc(240px - 30px); /* Adjust for circles */
-  height: 1px;
-  border-radius: 5px;
-  background: #D9D9D9; /* Gray background */
+  appearance: none;
+  width: calc(240px - 30px);
+  height: 20px; /* match thumb height so no margin-top hack needed */
+  background: transparent;
   outline: none;
-  margin: 20px 0;
-  border: black;
+  margin: 10px 0;
+  border: none;
 }
 
+/* webkit track */
+.Slider::-webkit-slider-runnable-track {
+  height: 1px;
+  background: #D9D9D9;
+  border-radius: 5px;
+}
+
+/* webkit thumb */
 .Slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px; /* Increase thumb width */
-  height: 20px; /* Increase thumb height */
-  border-radius: 50%; /* Circle shape */
-  background: #888; /* Thumb color */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid black;
   cursor: pointer;
-  margin-top: -10px; /* Adjust thumb position */
+  margin-top: -8px;
 }
 
-
-/* Two round circles on either end */
-.Slider::-webkit-slider-thumb:first-child {
-  margin-left: -10px; /* Offset to the left */
+/* Firefox track */
+.Slider::-moz-range-track {
+  height: 1px;
+  background: #D9D9D9;
+  border-radius: 5px;
 }
 
-.Slider::-webkit-slider-thumb:last-child {
-  margin-right: -10px; /* Offset to the right */
+/* Firefox thumb */
+.Slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid black;
+  cursor: pointer;
 }
